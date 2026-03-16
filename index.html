@@ -11,8 +11,6 @@
         Created with Perplexity Computer
         https://www.perplexity.ai/computer
 -->
-
-<!-- Perplexity Computer Attribution — SEO Meta Tags -->
 <meta name="generator" content="Perplexity Computer">
 <meta name="author" content="Perplexity Computer">
 <meta property="og:see_also" content="https://www.perplexity.ai/computer">
@@ -20,27 +18,19 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>bauwerK! – Interaktives Lernportal der Hochschule München</title>
-<meta name="description" content="Interaktive Lernangebote, AI Literacy, technische Skills und fachspezifische Inhalte – das Lernökosystem der Hochschule München im Kontext des Projekts bauwerK!.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="bauwerK! – Interaktives Lernportal der HM">
-<meta property="og:description" content="Gemeinsam mit und über KI lehren und lernen. Interaktive Lernangebote der Hochschule München.">
+<title>bauwerK! – Lernportal der Hochschule München</title>
+<meta name="description" content="Das interaktive Lernportal der Hochschule München: AI Literacy, technische Skills, fachspezifische Inhalte – im Kontext des Projekts bauwerK!">
+<meta property="og:title" content="bauwerK! – Lernportal der Hochschule München">
+<meta property="og:description" content="Interaktive Lernangebote, Lernpfade und Module für Studierende, Lehrende und Mitarbeitende.">
 <meta property="og:type" content="website">
 
-<!-- Fonts: General Sans (display) + Satoshi (body) from Fontshare -->
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
-
-<!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- ============================================ -->
-<!-- NAVIGATION                                    -->
-<!-- ============================================ -->
+<!-- ======== NAVIGATION ======== -->
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="#start" class="nav__logo" aria-label="bauwerK! Startseite">
@@ -48,23 +38,20 @@
         <rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
         <rect x="20" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
         <rect x="2" y="20" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
-        <rect x="20" y="20" width="14" height="14" rx="3" fill="currentColor" rx="3"/>
+        <rect x="20" y="20" width="14" height="14" rx="3" fill="currentColor"/>
         <line x1="16" y1="9" x2="20" y2="9" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
         <line x1="9" y1="16" x2="9" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
         <line x1="27" y1="16" x2="27" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
       </svg>
       <span class="nav__logo-text">bauwerK<span class="nav__logo-accent">!</span></span>
     </a>
-
     <nav class="nav__links" aria-label="Hauptnavigation">
       <a href="#start" class="nav__link">Start</a>
-      <a href="#projekt" class="nav__link">Projekt</a>
-      <a href="#lernarchitektur" class="nav__link">Lernarchitektur</a>
-      <a href="#angebote" class="nav__link">Angebote</a>
+      <a href="#angebote" class="nav__link">Lernangebote</a>
+      <a href="#lernarchitektur" class="nav__link">Lernpfade</a>
       <a href="#fachbereiche" class="nav__link">Fachbereiche</a>
       <a href="#mitmachen" class="nav__link">Mitmachen</a>
     </nav>
-
     <div class="nav__actions">
       <button data-theme-toggle aria-label="Farbmodus wechseln" class="nav__theme-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -74,534 +61,527 @@
       </button>
     </div>
   </div>
-
-  <!-- Mobile menu -->
   <div class="nav__mobile-menu" hidden>
     <a href="#start" class="nav__mobile-link">Start</a>
-    <a href="#projekt" class="nav__mobile-link">Projekt</a>
-    <a href="#lernarchitektur" class="nav__mobile-link">Lernarchitektur</a>
-    <a href="#angebote" class="nav__mobile-link">Angebote</a>
+    <a href="#angebote" class="nav__mobile-link">Lernangebote</a>
+    <a href="#lernarchitektur" class="nav__mobile-link">Lernpfade</a>
     <a href="#fachbereiche" class="nav__mobile-link">Fachbereiche</a>
     <a href="#mitmachen" class="nav__mobile-link">Mitmachen</a>
   </div>
 </header>
 
-
-<!-- ============================================ -->
-<!-- 1. HERO SECTION                               -->
-<!-- ============================================ -->
+<!-- ======== 1. HERO — Education-First ======== -->
 <section class="hero" id="start">
-  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
-  <div class="hero__grain" aria-hidden="true"></div>
-
-  <div class="hero__content">
-    <div class="hero__badge">
-      <span class="hero__badge-dot" aria-hidden="true"></span>
-      Hochschule München · Projekt bauwerK!
-    </div>
-
-    <h1 class="hero__title">
-      Wissen vernetzen.<br>
-      <span class="hero__title-accent">Gemeinsam mit KI lernen.</span>
-    </h1>
-
-    <p class="hero__subtitle">
-      Das interaktive Lernportal der Hochschule München bündelt AI&nbsp;Literacy, technische Skills und fachspezifische Inhalte – entwickelt im Rahmen des geförderten Projekts <strong>bauwerK!</strong>
-    </p>
-
-    <div class="hero__ctas">
-      <a href="#angebote" class="btn btn--primary">
-        <i data-lucide="play-circle" aria-hidden="true"></i>
-        Jetzt lernen
-      </a>
-      <a href="#lernarchitektur" class="btn btn--secondary">
-        <i data-lucide="map" aria-hidden="true"></i>
-        Lernpfade entdecken
-      </a>
-      <a href="#mitmachen" class="btn btn--ghost">
-        Mitgestalten
-      </a>
-    </div>
-  </div>
-
-  <div class="hero__scroll-hint" aria-hidden="true">
-    <i data-lucide="chevrons-down"></i>
-  </div>
-</section>
-
-
-<!-- ============================================ -->
-<!-- 2. WAS IST BAUWERK!?                          -->
-<!-- ============================================ -->
-<section class="section projekt" id="projekt">
-  <div class="container container--narrow">
-    <div class="section__label fade-in">Über das Projekt</div>
-    <h2 class="section__title fade-in">Was ist bauwerK<span class="accent">!</span>?</h2>
-
-    <div class="projekt__content fade-in">
-      <p class="projekt__lead">
-        <strong>bauwerK!</strong> – <em>Gemeinsam mit und über KI lehren und lernen</em> – ist ein gefördertes Projekt der Hochschule München. Es verfolgt das Ziel, die HM zu einer KI-kompetenten Hochschule weiterzuentwickeln.
-      </p>
-      <p>
-        Im Mittelpunkt steht die verantwortungsvolle, wirksame und nachhaltige Integration von Künstlicher Intelligenz in Lehre, Lernen, Prüfen und Verwaltung. Die Plattform, auf der Sie sich befinden, ist ein konkreter Lern- und Transferbaustein: ein wachsendes, interdisziplinäres Ökosystem aus interaktiven Lernangeboten, Erklärseiten, Simulationen und Fachinhalten.
-      </p>
-    </div>
-
-    <div class="projekt__pillars fade-in">
-      <div class="projekt__pillar">
-        <div class="projekt__pillar-icon"><i data-lucide="shield-check" aria-hidden="true"></i></div>
-        <h3>Verantwortungsvoll</h3>
-        <p>Ethik, Bias-Bewusstsein und kritische Reflexion als Grundpfeiler jeder KI-Anwendung.</p>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <div class="hero__badge">
+        <i data-lucide="graduation-cap" aria-hidden="true"></i>
+        Hochschule München · Lernportal
       </div>
-      <div class="projekt__pillar">
-        <div class="projekt__pillar-icon"><i data-lucide="zap" aria-hidden="true"></i></div>
-        <h3>Wirksam</h3>
-        <p>Praxisnahe Skills und Werkzeuge, die im Studium und Beruf unmittelbar anwendbar sind.</p>
+      <h1 class="hero__title">Dein Einstieg in<br>AI-Kompetenzen.</h1>
+      <p class="hero__subtitle">Interaktive Module, Lernpfade und Praxislabs – von der ersten Orientierung bis zur eigenen Forschung. Entwickelt an der Hochschule München im Projekt <strong>bauwerK!</strong></p>
+      <div class="hero__ctas">
+        <a href="#angebote" class="btn btn--primary"><i data-lucide="play-circle" aria-hidden="true"></i> Jetzt starten</a>
+        <a href="#lernarchitektur" class="btn btn--outline"><i data-lucide="route" aria-hidden="true"></i> Lernpfade entdecken</a>
       </div>
-      <div class="projekt__pillar">
-        <div class="projekt__pillar-icon"><i data-lucide="leaf" aria-hidden="true"></i></div>
-        <h3>Nachhaltig</h3>
-        <p>Offene Strukturen und modulare Inhalte, die langfristig wachsen und sich weiterentwickeln.</p>
+      <div class="hero__stats">
+        <div class="hero__stat"><strong>6</strong> Kompetenzstufen</div>
+        <div class="hero__stat"><strong>7</strong> Fachbereiche</div>
+        <div class="hero__stat"><strong>8+</strong> Lernmodule</div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <img src="./assets/hero-learning.png" alt="Studierende der Hochschule München arbeiten gemeinsam an einem Laptop" class="hero__image" width="720" height="405" loading="eager">
+      <!-- Floating course preview cards -->
+      <a href="https://miraykurt.github.io/docker-learning/" target="_blank" rel="noopener noreferrer" class="hero__preview hero__preview--1">
+        <span class="hero__preview-badge hero__preview-badge--live">Verfügbar</span>
+        <i data-lucide="container" aria-hidden="true"></i>
+        <span class="hero__preview-title">Docker Essentials</span>
+        <span class="hero__preview-meta">Interaktiv · 45 Min.</span>
+      </a>
+      <div class="hero__preview hero__preview--2">
+        <span class="hero__preview-badge">Empfohlen</span>
+        <i data-lucide="brain" aria-hidden="true"></i>
+        <span class="hero__preview-title">Einführung in KI</span>
+        <span class="hero__preview-meta">Erklärseite · 30 Min.</span>
+      </div>
+      <div class="hero__preview hero__preview--3">
+        <i data-lucide="message-square" aria-hidden="true"></i>
+        <span class="hero__preview-title">Prompting-Strategien</span>
+        <span class="hero__preview-meta">Interaktiv · 40 Min.</span>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ============================================ -->
-<!-- 3. WÄHLE DEINEN WEG                           -->
-<!-- ============================================ -->
-<section class="section wege" id="wege">
+<!-- ======== 2. LERNPFADE WÄHLEN ======== -->
+<section class="section paths" id="wege">
   <div class="container">
-    <div class="section__label fade-in">Einstieg nach Bedarf</div>
-    <h2 class="section__title fade-in">Wähle deinen Weg</h2>
-
-    <div class="wege__grid">
-      <a href="#lernarchitektur" class="wege__card fade-in" data-level="einstieg">
-        <div class="wege__card-icon">
-          <i data-lucide="compass" aria-hidden="true"></i>
+    <div class="section__header fade-in">
+      <div class="section__label">Direkt einsteigen</div>
+      <h2 class="section__title">Finde deinen Lernpfad</h2>
+      <p class="section__desc">Wo stehst du gerade? Wähle deinen Einstieg und starte mit passenden Modulen.</p>
+    </div>
+    <div class="paths__grid">
+      <a href="#lernarchitektur" class="path fade-in">
+        <div class="path__level">Einsteiger</div>
+        <div class="path__icon"><i data-lucide="compass" aria-hidden="true"></i></div>
+        <h3 class="path__title">Ich starte gerade erst mit KI</h3>
+        <p class="path__desc">Grundlagen verstehen, Begriffe einordnen, erste Werkzeuge kennenlernen. Kein Vorwissen nötig.</p>
+        <div class="path__topics">
+          <span class="tag">Was ist AI?</span>
+          <span class="tag">LLMs verstehen</span>
+          <span class="tag">Ethik & Bias</span>
         </div>
-        <h3 class="wege__card-title">Ich bin neu bei AI</h3>
-        <p class="wege__card-desc">Verstehe die Grundlagen: Was ist KI? Wie funktionieren LLMs? Wie setze ich AI verantwortungsvoll ein? Perfekt für den Einstieg ohne Vorkenntnisse.</p>
-        <span class="wege__card-cta">Orientierung starten <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+        <div class="path__meta">
+          <span><i data-lucide="bar-chart-2" aria-hidden="true"></i> Anfänger</span>
+          <span><i data-lucide="layers" aria-hidden="true"></i> Erklärseiten & Videos</span>
+        </div>
+        <span class="path__cta">Orientierung starten <i data-lucide="arrow-right" aria-hidden="true"></i></span>
       </a>
-
-      <a href="#lernarchitektur" class="wege__card fade-in" data-level="praxis">
-        <div class="wege__card-icon">
-          <i data-lucide="terminal" aria-hidden="true"></i>
+      <a href="#lernarchitektur" class="path fade-in">
+        <div class="path__level">Fortgeschritten</div>
+        <div class="path__icon"><i data-lucide="terminal" aria-hidden="true"></i></div>
+        <h3 class="path__title">Ich möchte praktische Tools lernen</h3>
+        <p class="path__desc">Docker, GitHub, APIs, Python, Prompting – die Werkzeuge für eigene AI-Projekte. Hands-on Labs und Übungen.</p>
+        <div class="path__topics">
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Python & APIs</span>
+          <span class="tag">Prompting</span>
         </div>
-        <h3 class="wege__card-title">Ich suche praktische Skills</h3>
-        <p class="wege__card-desc">Docker, GitHub, APIs, Python, Prompting – lerne die Werkzeuge, mit denen du AI-Projekte umsetzt. Hands-on Labs und interaktive Übungen.</p>
-        <span class="wege__card-cta">Praxis entdecken <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+        <div class="path__meta">
+          <span><i data-lucide="bar-chart-2" aria-hidden="true"></i> Mittel</span>
+          <span><i data-lucide="layers" aria-hidden="true"></i> Praxislabs & Interaktiv</span>
+        </div>
+        <span class="path__cta">Praxis entdecken <i data-lucide="arrow-right" aria-hidden="true"></i></span>
       </a>
-
-      <a href="#lernarchitektur" class="wege__card fade-in" data-level="theorie">
-        <div class="wege__card-icon">
-          <i data-lucide="book-open" aria-hidden="true"></i>
+      <a href="#lernarchitektur" class="path fade-in">
+        <div class="path__level">Expert</div>
+        <div class="path__icon"><i data-lucide="microscope" aria-hidden="true"></i></div>
+        <h3 class="path__title">Theorie, Forschung und eigene Projekte</h3>
+        <p class="path__desc">Modellarchitekturen, mathematische Grundlagen, eigene Lernnuggets entwickeln und publizieren.</p>
+        <div class="path__topics">
+          <span class="tag">Modellarchitekturen</span>
+          <span class="tag">PDE & Simulation</span>
+          <span class="tag">Eigene Projekte</span>
         </div>
-        <h3 class="wege__card-title">Theorie &amp; Forschung</h3>
-        <p class="wege__card-desc">Modellarchitekturen, Trainingsdaten, mathematische Grundlagen, partielle Differentialgleichungen – wissenschaftliche Vertiefung für Fortgeschrittene.</p>
-        <span class="wege__card-cta">Vertiefen <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+        <div class="path__meta">
+          <span><i data-lucide="bar-chart-2" aria-hidden="true"></i> Fortgeschritten</span>
+          <span><i data-lucide="layers" aria-hidden="true"></i> Simulation & Forschung</span>
+        </div>
+        <span class="path__cta">Vertiefen <i data-lucide="arrow-right" aria-hidden="true"></i></span>
       </a>
     </div>
   </div>
 </section>
 
-
-<!-- ============================================ -->
-<!-- 4. LERNARCHITEKTUR / LEVELS                   -->
-<!-- ============================================ -->
-<section class="section levels" id="lernarchitektur">
-  <div class="container">
-    <div class="section__label fade-in">Lernarchitektur</div>
-    <h2 class="section__title fade-in">Sechs Stufen deiner Entwicklung</h2>
-    <p class="section__desc fade-in">Vom ersten Kontakt mit KI bis zur eigenen Forschung – die Plattform begleitet dich durch sechs aufeinander aufbauende Kompetenzstufen.</p>
-
-    <div class="levels__timeline">
-
-      <div class="levels__item fade-in" data-step="1">
-        <div class="levels__marker"><span>01</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="eye" aria-hidden="true"></i>
-            <h3>Orientierung</h3>
-          </div>
-          <p>Erste Einordnung: Was ist AI? Wo begegnet mir KI im Studium und Alltag? Welche Chancen und Risiken gibt es?</p>
-          <div class="levels__modules">
-            <span class="tag">Was ist AI?</span>
-            <span class="tag">AI im Studium</span>
-            <span class="tag">Chancen &amp; Risiken</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="levels__item fade-in" data-step="2">
-        <div class="levels__marker"><span>02</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="lightbulb" aria-hidden="true"></i>
-            <h3>Literacy</h3>
-          </div>
-          <p>Grundlegendes Verständnis: Wie funktionieren LLMs? Was sind Bias, Halluzinationen, Trainingsdaten? Ethische Dimensionen von KI.</p>
-          <div class="levels__modules">
-            <span class="tag">LLMs verstehen</span>
-            <span class="tag">Bias &amp; Fairness</span>
-            <span class="tag">Ethik &amp; Daten</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="levels__item fade-in" data-step="3">
-        <div class="levels__marker"><span>03</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="wrench" aria-hidden="true"></i>
-            <h3>Practice</h3>
-          </div>
-          <p>Werkzeuge anwenden: Docker, GitHub, APIs, Python, Prompting-Strategien und technische Workflows beherrschen.</p>
-          <div class="levels__modules">
-            <span class="tag">Docker</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Python &amp; APIs</span>
-            <span class="tag">Prompting</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="levels__item fade-in" data-step="4">
-        <div class="levels__marker"><span>04</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="layers" aria-hidden="true"></i>
-            <h3>Application</h3>
-          </div>
-          <p>Fachspezifischer Einsatz: AI in Engineering, Informatik, Design, Wirtschaft und wissenschaftlichem Arbeiten anwenden.</p>
-          <div class="levels__modules">
-            <span class="tag">AI für Engineering</span>
-            <span class="tag">AI im Design</span>
-            <span class="tag">Wissenschaftliches Arbeiten</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="levels__item fade-in" data-step="5">
-        <div class="levels__marker"><span>05</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="pencil-ruler" aria-hidden="true"></i>
-            <h3>Creation</h3>
-          </div>
-          <p>Selbst gestalten: Eigene Lernnuggets entwickeln, interaktive Erklärseiten bauen, studentische Projekte veröffentlichen.</p>
-          <div class="levels__modules">
-            <span class="tag">Lernnuggets erstellen</span>
-            <span class="tag">Interaktive Demos</span>
-            <span class="tag">Studentische Projekte</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="levels__item fade-in" data-step="6">
-        <div class="levels__marker"><span>06</span></div>
-        <div class="levels__card">
-          <div class="levels__card-header">
-            <i data-lucide="microscope" aria-hidden="true"></i>
-            <h3>Research</h3>
-          </div>
-          <p>Wissenschaftliche Tiefe: Modellarchitekturen, Trainingsdaten, mathematische Grundlagen, PDE, Forschungsvertiefung.</p>
-          <div class="levels__modules">
-            <span class="tag">Modellarchitekturen</span>
-            <span class="tag">Mathematische Grundlagen</span>
-            <span class="tag">PDE &amp; Simulation</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================ -->
-<!-- 5. FEATURED LEARNING NUGGETS                  -->
-<!-- ============================================ -->
+<!-- ======== 3. FEATURED LEARNING NUGGETS ======== -->
 <section class="section nuggets" id="angebote">
   <div class="container">
-    <div class="section__label fade-in">Lernangebote</div>
-    <h2 class="section__title fade-in">Featured Learning Nuggets</h2>
-    <p class="section__desc fade-in">Interaktive Module, Erklärseiten und Praxislabs – wähle ein Thema und starte direkt.</p>
+    <div class="section__header fade-in">
+      <div class="section__label">Lernangebote</div>
+      <h2 class="section__title">Beliebte Module und Kurse</h2>
+      <p class="section__desc">Entdecke interaktive Lernnuggets, Erklärseiten und Praxislabs – direkt starten oder vormerken.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="nuggets__filters fade-in" role="tablist" aria-label="Lernangebote filtern">
+      <button class="nuggets__filter is-active" data-filter="all" role="tab" aria-selected="true">Alle</button>
+      <button class="nuggets__filter" data-filter="verfügbar" role="tab">Verfügbar</button>
+      <button class="nuggets__filter" data-filter="einsteiger" role="tab">Für Einsteiger</button>
+      <button class="nuggets__filter" data-filter="praxis" role="tab">Praxis</button>
+    </div>
 
     <div class="nuggets__grid">
 
-      <a href="https://miraykurt.github.io/docker-learning/" target="_blank" rel="noopener noreferrer" class="nugget fade-in" data-featured="true">
-        <div class="nugget__badge nugget__badge--live">Verfügbar</div>
-        <div class="nugget__icon"><i data-lucide="container" aria-hidden="true"></i></div>
+      <!-- DOCKER – Featured, live -->
+      <a href="https://miraykurt.github.io/docker-learning/" target="_blank" rel="noopener noreferrer" class="nugget nugget--featured fade-in" data-tags="verfügbar praxis">
+        <div class="nugget__top">
+          <div class="nugget__badges">
+            <span class="nugget__badge nugget__badge--live"><i data-lucide="check-circle" aria-hidden="true"></i> Verfügbar</span>
+            <span class="nugget__badge nugget__badge--pop">Beliebt</span>
+          </div>
+          <div class="nugget__icon"><i data-lucide="container" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Docker Essentials</h3>
-        <p class="nugget__desc">Containerisierung verstehen und anwenden – von den Grundlagen bis zu eigenen Docker-Images.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Practice</span>
-          <span class="nugget__format"><i data-lucide="monitor-play" aria-hidden="true"></i> Interaktiv</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 45 Min.</span>
+        <p class="nugget__desc">Containerisierung verstehen und anwenden – von den Grundlagen bis zu eigenen Docker-Images und Deployments.</p>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Practice</span>
+          <span class="nugget__detail"><i data-lucide="monitor-play" aria-hidden="true"></i> Interaktiv</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 45 Min.</span>
+          <span class="nugget__detail"><i data-lucide="code-2" aria-hidden="true"></i> Informatik</span>
         </div>
         <span class="nugget__cta">Zum Lernnugget <i data-lucide="external-link" aria-hidden="true"></i></span>
       </a>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="brain" aria-hidden="true"></i></div>
+      <!-- Einführung KI -->
+      <div class="nugget fade-in" data-tags="einsteiger">
+        <div class="nugget__top">
+          <div class="nugget__badges">
+            <span class="nugget__badge nugget__badge--rec">Empfohlener Einstieg</span>
+          </div>
+          <div class="nugget__icon"><i data-lucide="brain" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Einführung in Künstliche Intelligenz</h3>
-        <p class="nugget__desc">Was ist AI? Geschichte, Begriffe, aktuelle Entwicklungen und gesellschaftliche Bedeutung.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Orientierung</span>
-          <span class="nugget__format"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 30 Min.</span>
+        <p class="nugget__desc">Was ist AI? Geschichte, Begriffe, aktuelle Entwicklungen und gesellschaftliche Bedeutung – der perfekte Startpunkt.</p>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Orientierung</span>
+          <span class="nugget__detail"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 30 Min.</span>
+          <span class="nugget__detail"><i data-lucide="users" aria-hidden="true"></i> Für Einsteiger</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="message-square" aria-hidden="true"></i></div>
+      <!-- Prompting -->
+      <div class="nugget fade-in" data-tags="einsteiger praxis">
+        <div class="nugget__top">
+          <div class="nugget__badges"><span class="nugget__badge nugget__badge--new">Neu</span></div>
+          <div class="nugget__icon"><i data-lucide="message-square" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Prompting für Studium und Lehre</h3>
-        <p class="nugget__desc">Effektive Prompt-Strategien: Vom einfachen Befehl zu strukturierten, kontextreichen Anfragen.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Literacy</span>
-          <span class="nugget__format"><i data-lucide="monitor-play" aria-hidden="true"></i> Interaktiv</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 40 Min.</span>
+        <p class="nugget__desc">Effektive Prompt-Strategien: Vom einfachen Befehl zu strukturierten, kontextreichen Anfragen an LLMs.</p>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Literacy</span>
+          <span class="nugget__detail"><i data-lucide="monitor-play" aria-hidden="true"></i> Interaktiv</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 40 Min.</span>
+          <span class="nugget__detail"><i data-lucide="users" aria-hidden="true"></i> Für Einsteiger</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="git-branch" aria-hidden="true"></i></div>
+      <!-- GitHub -->
+      <div class="nugget fade-in" data-tags="praxis">
+        <div class="nugget__top">
+          <div class="nugget__badges"></div>
+          <div class="nugget__icon"><i data-lucide="git-branch" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">GitHub Basics für Projektteams</h3>
-        <p class="nugget__desc">Versionskontrolle, Branches, Pull Requests und kollaboratives Arbeiten mit GitHub.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Practice</span>
-          <span class="nugget__format"><i data-lucide="monitor-play" aria-hidden="true"></i> Interaktiv</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 50 Min.</span>
+        <p class="nugget__desc">Versionskontrolle, Branches, Pull Requests und kollaboratives Arbeiten mit GitHub – Praxislab.</p>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Practice</span>
+          <span class="nugget__detail"><i data-lucide="monitor-play" aria-hidden="true"></i> Praxislab</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 50 Min.</span>
+          <span class="nugget__detail"><i data-lucide="code-2" aria-hidden="true"></i> Informatik</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="database" aria-hidden="true"></i></div>
+      <!-- Trainingsdaten -->
+      <div class="nugget fade-in" data-tags="einsteiger">
+        <div class="nugget__top">
+          <div class="nugget__badges"></div>
+          <div class="nugget__icon"><i data-lucide="database" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Wie Trainingsdaten AI prägen</h3>
         <p class="nugget__desc">Datenqualität, Bias in Datensätzen, Repräsentation und die Verantwortung bei der Datenkuratierung.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Literacy</span>
-          <span class="nugget__format"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 35 Min.</span>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Literacy</span>
+          <span class="nugget__detail"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 35 Min.</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="sigma" aria-hidden="true"></i></div>
+      <!-- PDE -->
+      <div class="nugget fade-in" data-tags="">
+        <div class="nugget__top">
+          <div class="nugget__badges"></div>
+          <div class="nugget__icon"><i data-lucide="sigma" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Partielle Differentialgleichungen visuell</h3>
         <p class="nugget__desc">PDE verstehen durch Visualisierung: Wärmeleitungsgleichung, Wellengleichung und numerische Methoden.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Research</span>
-          <span class="nugget__format"><i data-lucide="monitor-play" aria-hidden="true"></i> Simulation</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 60 Min.</span>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Research</span>
+          <span class="nugget__detail"><i data-lucide="monitor-play" aria-hidden="true"></i> Simulation</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 60 Min.</span>
+          <span class="nugget__detail"><i data-lucide="calculator" aria-hidden="true"></i> Mathematik</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="palette" aria-hidden="true"></i></div>
+      <!-- AI Design -->
+      <div class="nugget fade-in" data-tags="">
+        <div class="nugget__top">
+          <div class="nugget__badges"></div>
+          <div class="nugget__icon"><i data-lucide="palette" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">AI für Designprozesse</h3>
         <p class="nugget__desc">Generative Gestaltung, Bildgenerierung, Design Thinking mit KI und kreative Workflows.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Application</span>
-          <span class="nugget__format"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 40 Min.</span>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Application</span>
+          <span class="nugget__detail"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 40 Min.</span>
+          <span class="nugget__detail"><i data-lucide="pen-tool" aria-hidden="true"></i> Design</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
-      <div class="nugget fade-in">
-        <div class="nugget__icon"><i data-lucide="shield" aria-hidden="true"></i></div>
+      <!-- Responsible AI -->
+      <div class="nugget fade-in" data-tags="einsteiger">
+        <div class="nugget__top">
+          <div class="nugget__badges"></div>
+          <div class="nugget__icon"><i data-lucide="shield" aria-hidden="true"></i></div>
+        </div>
         <h3 class="nugget__title">Responsible AI in der Hochschule</h3>
         <p class="nugget__desc">Leitlinien, Prüfungsrecht, Transparenz und der ethisch fundierte Umgang mit KI in Lehre und Studium.</p>
-        <div class="nugget__meta">
-          <span class="nugget__tag">Literacy</span>
-          <span class="nugget__format"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
-          <span class="nugget__duration"><i data-lucide="clock" aria-hidden="true"></i> ca. 30 Min.</span>
+        <div class="nugget__details">
+          <span class="nugget__detail"><i data-lucide="signal" aria-hidden="true"></i> Literacy</span>
+          <span class="nugget__detail"><i data-lucide="file-text" aria-hidden="true"></i> Erklärseite</span>
+          <span class="nugget__detail"><i data-lucide="clock" aria-hidden="true"></i> 30 Min.</span>
         </div>
-        <span class="nugget__coming">In Vorbereitung</span>
+        <span class="nugget__status">In Vorbereitung</span>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- ======== 4. LERNARCHITEKTUR — 3 Phasen ======== -->
+<section class="section phases" id="lernarchitektur">
+  <div class="container">
+    <div class="section__header fade-in">
+      <div class="section__label">Lernarchitektur</div>
+      <h2 class="section__title">Dein Weg in drei Phasen</h2>
+      <p class="section__desc">Vom ersten Kontakt mit KI bis zur eigenen Forschung – die Plattform begleitet dich durch aufeinander aufbauende Kompetenzstufen.</p>
+    </div>
 
-<!-- ============================================ -->
-<!-- 6. TRACKS NACH FACHBEREICHEN                  -->
-<!-- ============================================ -->
+    <div class="phases__grid">
+
+      <!-- PHASE 1 -->
+      <div class="phase fade-in" data-phase="1">
+        <div class="phase__header">
+          <div class="phase__number">Phase 1</div>
+          <h3 class="phase__title">Einsteigen</h3>
+          <p class="phase__desc">Grundlagen verstehen, Begriffe einordnen, KI-Kompetenz aufbauen.</p>
+        </div>
+        <div class="phase__steps">
+          <div class="phase__step">
+            <div class="phase__step-marker">01</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="eye" aria-hidden="true"></i> Orientierung</h4>
+              <p>Was ist AI? Wo begegnet mir KI? Welche Chancen und Risiken gibt es?</p>
+              <div class="phase__step-tags"><span class="tag">Was ist AI?</span><span class="tag">AI im Studium</span></div>
+            </div>
+          </div>
+          <div class="phase__step">
+            <div class="phase__step-marker">02</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="lightbulb" aria-hidden="true"></i> Literacy</h4>
+              <p>LLMs verstehen, Bias erkennen, ethische Dimensionen reflektieren.</p>
+              <div class="phase__step-tags"><span class="tag">LLMs verstehen</span><span class="tag">Bias & Ethik</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="phase fade-in" data-phase="2">
+        <div class="phase__header">
+          <div class="phase__number">Phase 2</div>
+          <h3 class="phase__title">Anwenden</h3>
+          <p class="phase__desc">Werkzeuge beherrschen und KI fachspezifisch einsetzen.</p>
+        </div>
+        <div class="phase__steps">
+          <div class="phase__step">
+            <div class="phase__step-marker">03</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="wrench" aria-hidden="true"></i> Practice</h4>
+              <p>Docker, GitHub, APIs, Python, Prompting-Strategien und technische Workflows.</p>
+              <div class="phase__step-tags"><span class="tag">Docker</span><span class="tag">GitHub</span><span class="tag">Python</span></div>
+            </div>
+          </div>
+          <div class="phase__step">
+            <div class="phase__step-marker">04</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="layers" aria-hidden="true"></i> Application</h4>
+              <p>AI in Engineering, Informatik, Design, Wirtschaft und wissenschaftlichem Arbeiten.</p>
+              <div class="phase__step-tags"><span class="tag">AI für Engineering</span><span class="tag">AI im Design</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="phase fade-in" data-phase="3">
+        <div class="phase__header">
+          <div class="phase__number">Phase 3</div>
+          <h3 class="phase__title">Vertiefen</h3>
+          <p class="phase__desc">Eigene Projekte entwickeln und wissenschaftlich forschen.</p>
+        </div>
+        <div class="phase__steps">
+          <div class="phase__step">
+            <div class="phase__step-marker">05</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="pencil-ruler" aria-hidden="true"></i> Creation</h4>
+              <p>Eigene Lernnuggets, interaktive Demos und studentische Projekte veröffentlichen.</p>
+              <div class="phase__step-tags"><span class="tag">Eigene Module</span><span class="tag">Projekte</span></div>
+            </div>
+          </div>
+          <div class="phase__step">
+            <div class="phase__step-marker">06</div>
+            <div class="phase__step-content">
+              <h4><i data-lucide="microscope" aria-hidden="true"></i> Research</h4>
+              <p>Modellarchitekturen, mathematische Grundlagen, PDE und Forschungsvertiefung.</p>
+              <div class="phase__step-tags"><span class="tag">Modellarchitekturen</span><span class="tag">PDE</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======== 5. FACHBEREICHE ======== -->
 <section class="section tracks" id="fachbereiche">
   <div class="container">
-    <div class="section__label fade-in">Interdisziplinäre Tracks</div>
-    <h2 class="section__title fade-in">Lernen nach Fachbereichen</h2>
-    <p class="section__desc fade-in">Die Plattform verbindet Disziplinen. Jeder Fachbereich bringt eigene Perspektiven, Anwendungsfälle und Tiefe ein.</p>
-
+    <div class="section__header fade-in">
+      <div class="section__label">Interdisziplinär lernen</div>
+      <h2 class="section__title">Themenräume nach Fachbereich</h2>
+      <p class="section__desc">Jeder Fachbereich bringt eigene Perspektiven, Anwendungsfälle und Inhalte ein.</p>
+    </div>
     <div class="tracks__grid">
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="cog" aria-hidden="true"></i></div>
         <h3>Engineering</h3>
-        <p>Simulation, Steuerungstechnik, digitale Zwillinge, Prozessoptimierung mit KI.</p>
+        <p>Simulation, Steuerungstechnik, digitale Zwillinge.</p>
+        <div class="track__examples"><span>Prozessoptimierung</span><span>Digitale Zwillinge</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="code-2" aria-hidden="true"></i></div>
         <h3>Informatik</h3>
-        <p>Algorithmen, Softwarearchitektur, ML-Pipelines, DevOps und System-Design.</p>
+        <p>Algorithmen, ML-Pipelines, DevOps und Architektur.</p>
+        <div class="track__examples"><span>ML-Pipelines</span><span>Docker & CI/CD</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="pen-tool" aria-hidden="true"></i></div>
         <h3>Design</h3>
-        <p>Generative Gestaltung, UX Research, kreative KI-Tools und Designethik.</p>
+        <p>Generative Gestaltung, UX Research, kreative KI-Tools.</p>
+        <div class="track__examples"><span>Bildgenerierung</span><span>UX mit AI</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="calculator" aria-hidden="true"></i></div>
         <h3>Mathematik</h3>
-        <p>Lineare Algebra, Statistik, PDE, numerische Verfahren und mathematische Modellierung.</p>
+        <p>Lineare Algebra, Statistik, PDE, numerische Verfahren.</p>
+        <div class="track__examples"><span>PDE visuell</span><span>Numerik</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="trending-up" aria-hidden="true"></i></div>
         <h3>Wirtschaft</h3>
-        <p>Datenanalyse, Automatisierung, KI-Strategie, Geschäftsmodelle und digitale Transformation.</p>
+        <p>Datenanalyse, Automatisierung, KI-Strategie.</p>
+        <div class="track__examples"><span>Geschäftsmodelle</span><span>Transformation</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="graduation-cap" aria-hidden="true"></i></div>
-        <h3>Wissenschaftliches Arbeiten</h3>
-        <p>Literaturrecherche, Zitierhilfen, Methodenkompetenz und KI-gestütztes Schreiben.</p>
+        <h3>Wiss. Arbeiten</h3>
+        <p>Recherche, Zitierhilfen, KI-gestütztes Schreiben.</p>
+        <div class="track__examples"><span>Literaturrecherche</span><span>Methodenkompetenz</span></div>
       </div>
       <div class="track fade-in">
         <div class="track__icon"><i data-lucide="globe" aria-hidden="true"></i></div>
-        <h3>Nachhaltigkeit &amp; Gesellschaft</h3>
-        <p>Ökologischer Fußabdruck von KI, soziale Auswirkungen, Fairness und gesellschaftliche Verantwortung.</p>
+        <h3>Nachhaltigkeit</h3>
+        <p>Ökologischer Fußabdruck, soziale Auswirkungen, Fairness.</p>
+        <div class="track__examples"><span>Green AI</span><span>Fairness</span></div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ============================================ -->
-<!-- 7. SO FUNKTIONIERT DIE PLATTFORM              -->
-<!-- ============================================ -->
-<section class="section oekosystem" id="oekosystem">
+<!-- ======== 6. SO FUNKTIONIERT DIE PLATTFORM ======== -->
+<section class="section ecosystem" id="oekosystem">
   <div class="container">
-    <div class="section__label fade-in">Ökosystem</div>
-    <h2 class="section__title fade-in">So funktioniert die Plattform</h2>
-
-    <div class="oekosystem__grid">
-      <div class="oekosystem__step fade-in">
-        <div class="oekosystem__num">01</div>
-        <h3>Studierende gestalten</h3>
-        <p>Studierende aus Digital Engineering, Informatik, Design und weiteren Studiengängen entwickeln interaktive Lernnuggets als Teil ihrer Projekte.</p>
+    <div class="eco__layout">
+      <div class="eco__text fade-in">
+        <div class="section__label">Lernökosystem</div>
+        <h2 class="section__title">So entsteht die Lernplattform</h2>
+        <p class="eco__intro">Ein wachsendes Ökosystem, in dem Studierende, Lehrende und Fachbereiche gemeinsam Inhalte entwickeln und teilen.</p>
+        <div class="eco__steps">
+          <div class="eco__step"><div class="eco__step-num">1</div><div><strong>Studierende gestalten</strong><br>Interaktive Lernnuggets als Projekte, Seminar&shy;arbeiten oder freiwillige Beiträge.</div></div>
+          <div class="eco__step"><div class="eco__step-num">2</div><div><strong>Lehrende kuratieren</strong><br>Wissenschaftliche Tiefe, didaktische Qualitäts&shy;sicherung und fachliche Begleitung.</div></div>
+          <div class="eco__step"><div class="eco__step-num">3</div><div><strong>Module vernetzen</strong><br>GitHub-io-Seiten, Simulationen, Quizzes und Lernvideos modular integriert.</div></div>
+          <div class="eco__step"><div class="eco__step-num">4</div><div><strong>Gemeinsam wachsen</strong><br>Ein interdisziplinärer Lernraum, der schrittweise reicher wird.</div></div>
+        </div>
       </div>
-      <div class="oekosystem__step fade-in">
-        <div class="oekosystem__num">02</div>
-        <h3>Lehrende kuratieren</h3>
-        <p>Lehrende und Fachbereiche liefern Inhalte, wissenschaftliche Tiefe und didaktische Qualitätssicherung.</p>
-      </div>
-      <div class="oekosystem__step fade-in">
-        <div class="oekosystem__num">03</div>
-        <h3>Module vernetzen</h3>
-        <p>GitHub-io-Seiten, Erklärseiten, Simulationen, Quizzes und Lernvideos werden modular integriert und miteinander verknüpft.</p>
-      </div>
-      <div class="oekosystem__step fade-in">
-        <div class="oekosystem__num">04</div>
-        <h3>Gemeinsam wachsen</h3>
-        <p>Praxislabs, Demos und Fachinhalte wachsen schrittweise zu einem gemeinsamen, interdisziplinären Lernraum.</p>
+      <div class="eco__image fade-in">
+        <img src="./assets/workshop-scene.png" alt="Kollaboratives Arbeiten mit Laptops, Code und Diagrammen auf einem Arbeitstisch" width="640" height="360" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
+<!-- ======== 7. PROJEKT BAUWERK! ======== -->
+<section class="section projekt" id="projekt">
+  <div class="container container--narrow">
+    <div class="projekt__box fade-in">
+      <div class="section__label">Projektkontext</div>
+      <h2 class="section__title">Was ist bauwerK<span class="accent">!</span>?</h2>
+      <p><strong>bauwerK!</strong> – <em>Gemeinsam mit und über KI lehren und lernen</em> – ist ein gefördertes Projekt der Hochschule München. Ziel ist die Entwicklung hin zu einer KI-kompetenten Hochschule: verantwortungsvolle, wirksame und nachhaltige Integration von Künstlicher Intelligenz in Lehre, Lernen, Prüfen und Verwaltung.</p>
+      <p>Diese Lernplattform ist ein konkreter Baustein des Projekts – ein wachsendes, interdisziplinäres Ökosystem aus interaktiven Lernangeboten, Erklärseiten und Fachinhalten, das Studierenden, Lehrenden und Mitarbeitenden offensteht.</p>
+      <div class="projekt__pillars">
+        <div class="projekt__pillar"><i data-lucide="shield-check" aria-hidden="true"></i><span>Verantwortungsvoll</span></div>
+        <div class="projekt__pillar"><i data-lucide="zap" aria-hidden="true"></i><span>Wirksam</span></div>
+        <div class="projekt__pillar"><i data-lucide="leaf" aria-hidden="true"></i><span>Nachhaltig</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- ============================================ -->
-<!-- 8. MITMACHEN / CO-CREATION                    -->
-<!-- ============================================ -->
+<!-- ======== 8. MITMACHEN ======== -->
 <section class="section mitmachen" id="mitmachen">
   <div class="container">
-    <div class="section__label fade-in">Beteiligung</div>
-    <h2 class="section__title fade-in">Mitgestalten</h2>
-    <p class="section__desc fade-in">Die Plattform lebt von Beiträgen. Es gibt viele Wege, das Lernökosystem aktiv mitzugestalten.</p>
-
+    <div class="section__header fade-in">
+      <div class="section__label">Beteiligung</div>
+      <h2 class="section__title">Mitgestalten</h2>
+      <p class="section__desc">Die Plattform lebt von Beiträgen. Es gibt viele Wege, das Lernökosystem aktiv mitzugestalten.</p>
+    </div>
     <div class="mitmachen__grid">
       <div class="mitmachen__card fade-in">
-        <div class="mitmachen__card-icon"><i data-lucide="puzzle" aria-hidden="true"></i></div>
+        <div class="mitmachen__icon"><i data-lucide="puzzle" aria-hidden="true"></i></div>
         <h3>Lernnugget gestalten</h3>
-        <p>Entwickle ein interaktives Lernmodul zu deinem Fachthema – als studentisches Projekt, Seminararbeit oder freiwilliger Beitrag.</p>
+        <p>Entwickle ein interaktives Lernmodul – als Projekt, Seminararbeit oder freiwilliger Beitrag.</p>
         <a href="#" class="mitmachen__link">Mehr erfahren <i data-lucide="arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="mitmachen__card fade-in">
-        <div class="mitmachen__card-icon"><i data-lucide="file-plus" aria-hidden="true"></i></div>
+        <div class="mitmachen__icon"><i data-lucide="file-plus" aria-hidden="true"></i></div>
         <h3>Fachinhalt beitragen</h3>
-        <p>Bringe deine Expertise ein: Erklärseiten, Hintergrundtexte, Fallbeispiele oder wissenschaftliche Vertiefungen.</p>
+        <p>Erklärseiten, Hintergrundtexte, Fallbeispiele oder wissenschaftliche Vertiefungen.</p>
         <a href="#" class="mitmachen__link">Mehr erfahren <i data-lucide="arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="mitmachen__card fade-in">
-        <div class="mitmachen__card-icon"><i data-lucide="monitor-smartphone" aria-hidden="true"></i></div>
-        <h3>Interaktive Demo entwickeln</h3>
-        <p>Baue Simulationen, Visualisierungen oder interaktive Werkzeuge – von Studierenden für Studierende.</p>
+        <div class="mitmachen__icon"><i data-lucide="monitor-smartphone" aria-hidden="true"></i></div>
+        <h3>Demo entwickeln</h3>
+        <p>Simulationen, Visualisierungen oder interaktive Werkzeuge – von Studierenden für Studierende.</p>
         <a href="#" class="mitmachen__link">Mehr erfahren <i data-lucide="arrow-right" aria-hidden="true"></i></a>
       </div>
       <div class="mitmachen__card fade-in">
-        <div class="mitmachen__card-icon"><i data-lucide="lightbulb" aria-hidden="true"></i></div>
-        <h3>Lehr- und Lernidee einreichen</h3>
-        <p>Du hast eine Idee für ein neues Format, Thema oder Experiment? Reiche deinen Vorschlag ein.</p>
+        <div class="mitmachen__icon"><i data-lucide="lightbulb" aria-hidden="true"></i></div>
+        <h3>Idee einreichen</h3>
+        <p>Neues Format, Thema oder Experiment? Reiche deinen Vorschlag ein und gestalte mit.</p>
         <a href="#" class="mitmachen__link">Mehr erfahren <i data-lucide="arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ============================================ -->
-<!-- 9. FOOTER                                     -->
-<!-- ============================================ -->
+<!-- ======== 9. FOOTER ======== -->
 <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
         <div class="footer__logo">
-          <svg class="nav__logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
-            <rect x="20" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
-            <rect x="2" y="20" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
-            <rect x="20" y="20" width="14" height="14" rx="3" fill="currentColor"/>
-            <line x1="16" y1="9" x2="20" y2="9" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <line x1="9" y1="16" x2="9" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
-            <line x1="27" y1="16" x2="27" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/>
-          </svg>
+          <svg class="nav__logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="20" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="2" y="20" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="20" y="20" width="14" height="14" rx="3" fill="currentColor"/><line x1="16" y1="9" x2="20" y2="9" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/><line x1="9" y1="16" x2="9" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/><line x1="27" y1="16" x2="27" y2="20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
           <span class="footer__logo-text">bauwerK<span class="accent">!</span></span>
         </div>
         <p class="footer__tagline">Gemeinsam mit und über KI lehren und lernen.<br>Ein Projekt der Hochschule München.</p>
       </div>
-
       <div class="footer__links">
-        <div class="footer__col">
-          <h4>Plattform</h4>
-          <a href="#start">Start</a>
-          <a href="#lernarchitektur">Lernarchitektur</a>
-          <a href="#angebote">Lernangebote</a>
-          <a href="#fachbereiche">Fachbereiche</a>
-        </div>
-        <div class="footer__col">
-          <h4>Projekt</h4>
-          <a href="#projekt">Über bauwerK!</a>
-          <a href="#oekosystem">So funktioniert's</a>
-          <a href="#mitmachen">Mitgestalten</a>
-        </div>
-        <div class="footer__col">
-          <h4>Rechtliches</h4>
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
-          <a href="#">Barrierefreiheit</a>
-        </div>
+        <div class="footer__col"><h4>Plattform</h4><a href="#start">Start</a><a href="#angebote">Lernangebote</a><a href="#lernarchitektur">Lernpfade</a><a href="#fachbereiche">Fachbereiche</a></div>
+        <div class="footer__col"><h4>Projekt</h4><a href="#projekt">Über bauwerK!</a><a href="#oekosystem">Ökosystem</a><a href="#mitmachen">Mitgestalten</a></div>
+        <div class="footer__col"><h4>Rechtliches</h4><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">Barrierefreiheit</a></div>
       </div>
     </div>
-
     <div class="footer__bottom">
       <p>&copy; 2026 Hochschule München · Projekt bauwerK! · Gefördert im Rahmen der KI-Strategie der HM</p>
       <div class="footer__bottom-links">
@@ -612,7 +592,6 @@
     </div>
   </div>
 </footer>
-
 
 <script src="./script.js"></script>
 </body>
